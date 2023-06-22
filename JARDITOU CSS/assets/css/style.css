@@ -56,13 +56,13 @@ img {
 }
 
 .logo {
-  height: 70px;
-  width: 250px;
+  height: 80px;
+  width: 230px;
 }
 
 .custom-font {
   color: rgb(4, 31, 73);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "arial"
 }
 
 .flex {
@@ -70,7 +70,7 @@ img {
 }
 
 .col-gris {
-  width: 17%;
+  width: 15%;
   background-color: grey;
 }
 
@@ -98,7 +98,7 @@ img {
     flex-direction: column;
   }
 
-  /* Il manque le sélecteur ".table" devant les règles suivantes */
+
   .table thead {
     display: none;
   }
