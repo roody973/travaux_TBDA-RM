@@ -1,0 +1,30 @@
+.container {
+    border: 1px dashed green;
+    position: relative;
+    background-color: blueviolet;
+}
+
+.left-column {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 70%
+
+}
+
+.right-column {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 30%;
+    background-color: red;
+
+    color: blue
+
+}
+
+body {
+    /* background-color: aqua; */
+}

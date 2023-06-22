@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercices formulaires</title>
+    
+</head>
+
+
+<body>
+    
+    <h1>Contact</h1>
+    <hr>
+    <div>
+        *Ces zones sont obligatoires
+        <br><br>
+    </div>
+    <form class="contact-form">
+        <fieldset>
+            <legend>Vos Coordonnées</legend>
+            <label for="nom">Nom :</label><input type="text" name="nom" placeholder="Entrez votre nom" required><br>
+            <label for="prenom">Prénom :</label><input type="text" name="prenom" placeholder="Entrez votre prénom" required><br>
+            <br>
+            <label for="">Sexe* :</label>
+            <input type="radio" name="sexe" value="Féminin" required> Féminin
+            <input type="radio" name="sexe" value="Masculin" required> Masculin<br>
+            <br>
+            <label for="date">Date de naissance :</label>
+            <input type="date" name="date_naissance" id="date"><br>           
+            <label for="code_postal">Code postal* :</label>
+            <input type="text" name="code_postal" required><br>
+            <label for="ville">Ville* :</label>
+            <input type="text" name="ville" required><br>
+            <label for="adresse">Adresse :</label>
+            <input type="text" name="adresse"><br>
+            <label for="email">Email* :</label>
+            <input type="email" name="email" placeholder="rood.maignan@afpa.fr" required><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="sujet">Sujet :</label>
+            <select name="sujet" required>
+                <option value="">Veuillez sélectionner un sujet</option>
+                <option value="commandes">Mes commandes</option>
+                <option value="question">Question sur un produit</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="autre">Autres</option>
+            </select><br>
+            <label for="question">Votre question* :</label>
+            <textarea name="question" rows="3" cols="20" required></textarea>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="acceptation" value="accepte" required> * J'accepte le traitement informatique de ce formulaire
+        <br><br>
+        <button type="submit">Envoyer</button> <button type="reset">Annuler</button>
+    </form>
+</body>
+</html>
