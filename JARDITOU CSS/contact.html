@@ -8,11 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Exercices formulaires</title>
     
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: rgb(4, 31, 73);
+        }
+
+        .contact-form {
+            color: rgb(4, 31, 73);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            font-family: Arial, sans-serif;
+            padding: 5px;
+            border: 1px solid rgb(4, 31, 73);
+            border-radius: 3px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: rgb(4, 31, 73);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #000;
+        }
+    </style>
 </head>
 
-
 <body>
-    
     <h1>Contact</h1>
     <hr>
     <div>
@@ -22,15 +58,17 @@
     <form class="contact-form">
         <fieldset>
             <legend>Vos Coordonnées</legend>
-            <label for="nom">Nom :</label><input type="text" name="nom" placeholder="Entrez votre nom" required><br>
-            <label for="prenom">Prénom :</label><input type="text" name="prenom" placeholder="Entrez votre prénom" required><br>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" placeholder="Entrez votre nom" required><br>
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" placeholder="Entrez votre prénom" required><br>
             <br>
             <label for="">Sexe* :</label>
             <input type="radio" name="sexe" value="Féminin" required> Féminin
             <input type="radio" name="sexe" value="Masculin" required> Masculin<br>
             <br>
             <label for="date">Date de naissance :</label>
-            <input type="date" name="date_naissance" id="date"><br>           
+            <input type="date" name="date_naissance" id="date"><br>
             <label for="code_postal">Code postal* :</label>
             <input type="text" name="code_postal" required><br>
             <label for="ville">Ville* :</label>
@@ -60,4 +98,5 @@
         <button type="submit">Envoyer</button> <button type="reset">Annuler</button>
     </form>
 </body>
+
 </html>
